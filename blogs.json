@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "The Early Bird's Secret",
+    "excerpt": "How starting your day at your local cafe can transform your productivity.",
+    "content": "There’s a special magic in the first hour of the day. The smell of freshly ground beans and the quiet hum of the espresso machine create an atmosphere of possibility. We've found that customers who start their morning with a consistent routine are 30% more likely to report a 'successful' day. Whether it's reading the news or just enjoying the view, that first cup is more than just caffeine—it's a ritual.",
+    "date": "2024-02-15",
+    "author": "Sarah Chen",
+    "tags": ["Morning Routine", "Lifestyle"],
+    "image": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "title": "The Science of 'Coffee Shop Noise'",
+    "excerpt": "Why the background chatter of a cafe helps you focus better than a silent room.",
+    "content": "Ever wonder why you get so much done at Java Buzz? It's called the 'Coffee Shop Effect.' Studies show that a moderate level of ambient noise (around 70 decibels) enhances performance on creative tasks. The gentle clinking of cups and distant conversation provides just enough distraction to let your subconscious mind solve complex problems. Next time you're stuck on a project, let our atmosphere do the heavy lifting.",
+    "date": "2024-02-10",
+    "author": "Dr. Aris Thorne",
+    "tags": ["Productivity", "Focus"],
+    "image": "https://images.pexels.com/photos/31340327/pexels-photo-31340327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 3,
+    "title": "Finding Your Perfect Roast",
+    "excerpt": "A simple guide to understanding Light, Medium, and Dark roasts.",
+    "content": "Don't let the terminology intimidate you! Light roasts are actually the most caffeinated and have bright, fruity notes. Medium roasts (like our House Blend) are balanced and smooth. Dark roasts offer that classic, smoky, chocolatey flavor. There is no 'right' answer—only the roast that makes you smile. Ask our baristas for a sample taste next time you're in!",
+    "date": "2024-02-05",
+    "author": "Marco Rossi",
+    "tags": ["Education", "Coffee Guide"],
+    "image": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "title": "Beyond the Mug: Our Sustainability Mission",
+    "excerpt": "How your morning latte supports fair wages and healthy soil.",
+    "content": "We believe great coffee shouldn't cost the Earth. That’s why 100% of our beans are ethically sourced from small-scale farmers who use regenerative agriculture. By cutting out middle-men, we ensure that the people who grow your coffee are paid a thriving wage. Every sip you take helps support a family halfway across the globe.",
+    "date": "2024-01-28",
+    "author": "Emma Green",
+    "tags": ["Sustainability", "Community"],
+    "image": "https://images.pexels.com/photos/1236678/pexels-photo-1236678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 5,
+    "title": "The Art of the Flaky Croissant",
+    "excerpt": "Step inside our bakery to see how we create those golden layers.",
+    "content": "Our croissants take 48 hours to make. It’s a labor of love involving high-quality butter, precise temperature control, and a lot of patience. We laminate the dough by hand to create hundreds of paper-thin layers. It’s why they shatter perfectly when you take a bite. Freshly baked every morning at 5:00 AM, just for you.",
+    "date": "2024-01-20",
+    "author": "Chef Julian",
+    "tags": ["Bakery", "Food"],
+    "image": "https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 6,
+    "title": "Mindful Sipping: A 5-Minute Reset",
+    "excerpt": "Using your coffee break as a mental health tool.",
+    "content": "In a world of constant notifications, your coffee break is a rare chance to unplug. Try this: for the first five sips of your drink, put your phone away. Notice the warmth of the cup, the aroma, and the taste. This small act of mindfulness can lower your cortisol levels and reset your brain for the afternoon ahead.",
+    "date": "2024-01-15",
+    "author": "Wellness Team",
+    "tags": ["Wellness", "Mental Health"],
+    "image": "https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 7,
+    "title": "The Cold Brew Revolution",
+    "excerpt": "Why slow-steeped coffee is the smoothest way to caffeinate.",
+    "content": "Unlike iced coffee (which is brewed hot and cooled down), cold brew is never heated. We steep our grounds in room-temperature water for 18 full hours. This process extracts the flavor but leaves behind the bitterness and acidity. The result is a naturally sweet, silky-smooth drink that packs a powerful caffeine punch without the stomach upset.",
+    "date": "2024-01-10",
+    "author": "Barista Ben",
+    "tags": ["Cold Brew", "Education"],
+    "image": "https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 8,
+    "title": "Meeting in the Third Space",
+    "excerpt": "Why cafes are becoming the new preferred meeting spots for locals.",
+    "content": "Sociologists call it the 'Third Space'—the place between work and home where community happens. We love seeing neighbors meet here to plan community gardens, students tutor each other, and small business owners sign their first contracts. Our large community table is always open for those who want to connect.",
+    "date": "2024-01-05",
+    "author": "Java Buzz Team",
+    "tags": ["Community", "Networking"],
+    "image": "https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 9,
+    "title": "The Best Milk for Your Latte",
+    "excerpt": "Exploring our dairy and plant-based alternatives.",
+    "content": "Whether you prefer classic whole milk, creamy oat milk, or nutty almond milk, we've tested them all to find the perfect steam temperature for each. Each milk interacts differently with the espresso's acidity. If you want a recommendation for a specific drink, just ask! Our Oat Milk Mocha is a crowd favorite for a reason.",
+    "date": "2023-12-28",
+    "author": "Sarah Chen",
+    "tags": ["Tips", "Dietary"],
+    "image": "https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 10,
+    "title": "Evening Acoustic Sessions Are Back!",
+    "excerpt": "Join us every Friday night for local music and late-night lattes.",
+    "content": "We're extending our hours on Friday nights! Starting next month, we will host local acoustic musicians from 7:00 PM to 10:00 PM. It’s the perfect way to wind down the week with friends. No cover charge—just bring your love for music and maybe try one of our new evening pastry specials.",
+    "date": "2023-12-20",
+    "author": "Events Coordinator",
+    "tags": ["Events", "News"],
+    "image": "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Java Buzz | Premium Coffee & Fresh Food</title>
+    <meta name="description"
+        content="Java Buzz is the ultimate coffee shop for developers, freelancers, and students. Enjoy premium coffee, high-speed WiFi, and a productive atmosphere.">
+    <meta name="keywords"
+        content="coffee shop, developer cafe, coding space, Java Buzz, espresso, late night coding, coworking cafe">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="main-navigation">
+        <div class="container nav-container">
+            <div class="logo" data-testid="logo">
+                <span class="logo-text">JAVA BUZZ</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle"
+                aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" data-testid="nav-links">
+                <li><a href="Home.html" class="active" data-testid="nav-home">HOME</a></li>
+                <li><a href="Menu.html" data-testid="nav-menu">MENU</a></li>
+                <li><a href="Location.html" data-testid="nav-location">LOCATION</a></li>
+                <li><a href="Blog.html" data-testid="nav-blog">BLOG</a></li>
+                <li><a href="OrderNow.html" class="nav-cta" data-testid="nav-order">ORDER NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" data-testid="hero-section">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-testid="hero-title">
+                        <span class="hero-title-line">WHERE</span>
+                        <span class="hero-title-line hero-title-emphasis">COMMUNITY</span>
+                        <span class="hero-title-line">MEETS</span>
+                        <span class="hero-title-line hero-title-emphasis">COFFEE</span>
+                    </h1>
+                    <p class="hero-subtitle" data-testid="hero-subtitle">Fuel your day with premium brews & a welcoming
+                        atmosphere</p>
+                    <div class="hero-cta">
+                        <a href="OrderNow.html" class="btn-primary" data-testid="hero-cta-button">ORDER NOW</a>
+                        <a href="Menu.html" class="btn-secondary" data-testid="hero-menu-button">VIEW MENU</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="coffee-cup-container">
+                        <img src="https://images.pexels.com/photos/31340327/pexels-photo-31340327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Coffee and laptop" class="coffee-cup" data-testid="hero-image">
+                        <div class="steam steam-1"></div>
+                        <div class="steam steam-2"></div>
+                        <div class="steam steam-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" data-testid="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-testid="about-image">
+                    <img src="https://images.pexels.com/photos/16850705/pexels-photo-16850705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Java Buzz Interior" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" data-testid="about-title">Built for Everyone</h2>
+                    <div class="regular-text">
+                        <p>More than just a coffee shop - Java Buzz is your second home.</p>
+                        <p>We provide the perfect atmosphere for early mornings, relaxed afternoons, and everything in
+                            between.</p>
+                        <p>Enjoy excellent coffee, comfortable seating, and a welcoming community.</p>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item" data-testid="feature-wifi">
+                            <span class="feature-icon">⚡</span>
+                            <span class="feature-text">Gigabit WiFi</span>
+                        </div>
+                        <div class="feature-item" data-testid="feature-seating">
+                            <span class="feature-icon">💺</span>
+                            <span class="feature-text">Comfortable Seating</span>
+                        </div>
+                        <div class="feature-item" data-testid="feature-outlets">
+                            <span class="feature-icon">🔌</span>
+                            <span class="feature-text">Power Outlets Everywhere</span>
+                        </div>
+                        <div class="feature-item" data-testid="feature-hours">
+                            <span class="feature-icon">🌙</span>
+                            <span class="feature-text">Open Late (til 2 AM)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Preview -->
+    <section class="featured-menu" data-testid="featured-menu-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="featured-menu-title">Popular Picks</h2>
+            <div class="menu-grid" id="featuredMenu" data-testid="featured-menu-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="Menu.html" class="btn-secondary" data-testid="view-full-menu-button">VIEW FULL MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" data-testid="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-testid="cta-title">Ready to Fuel Your Next Project?</h2>
+                <p class="cta-subtitle" data-testid="cta-subtitle">Order online or visit us today</p>
+                <a href="OrderNow.html" class="btn-primary btn-large" data-testid="cta-order-button">PLACE YOUR
+                    ORDER</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Java Buzz</h3>
+                    <p>Where Code Meets Coffee</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Location.html">Location</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 6 AM - 2 AM</p>
+                    <p>Sat-Sun: 7 AM - 2 AM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@javabuzz.dev</p>
+                    <p>(555) CODE-123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Java Buzz. All rights reserved.<span class="cursor-blink">_</span></p>
+                <a href="sitemap.xml" class="sitemap-link">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

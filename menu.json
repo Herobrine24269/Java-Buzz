@@ -1,0 +1,82 @@
+[
+  {
+    "id": "espresso",
+    "name": "Espresso Shot",
+    "description": "Pure, intense, and rich. The perfect quick pick-me-up.",
+    "price": 3.50,
+    "category": "coffee",
+    "image": "img/image1.png"
+  },
+  {
+    "id": "latte",
+    "name": "Signature Latte",
+    "description": "Smooth and creamy. Perfect for relaxing or catching up with friends.",
+    "price": 5.00,
+    "category": "coffee",
+    "image": "img/image2.png"
+  },
+  {
+    "id": "cappuccino",
+    "name": "Classic Cappuccino",
+    "description": "A traditional favorite with a beautiful, thick layer of foam.",
+    "price": 5.50,
+    "category": "coffee",
+    "image": "img/image3.png"
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "description": "Smooth, bold, and robust. A classic drip-style experience.",
+    "price": 4.00,
+    "category": "coffee",
+    "image": "img/image4.png"
+  },
+  {
+    "id": "cold-brew",
+    "name": "House Cold Brew",
+    "description": "Slow-steeped perfection. Low acidity, highly refreshing.",
+    "price": 5.50,
+    "category": "coffee",
+    "image": "img/image5.png"
+  },
+  {
+    "id": "mocha",
+    "name": "Artisan Mocha",
+    "description": "Rich espresso meets sweet cocoa. A comforting treat.",
+    "price": 6.00,
+    "category": "coffee",
+    "image": "img/image6.png"
+  },
+  {
+    "id": "croissant",
+    "name": "Buttery Croissant",
+    "description": "Flaky, warm, and baked fresh every morning.",
+    "price": 4.50,
+    "category": "food",
+    "image": "img/image7.png"
+  },
+  {
+    "id": "bagel",
+    "name": "Everything Bagel",
+    "description": "Toasted to perfection, served with rich cream cheese.",
+    "price": 5.00,
+    "category": "food",
+    "image": "img/image8.png"
+  },
+  {
+    "id": "avocado-toast",
+    "name": "Avocado Toast",
+    "description": "Fresh avocado on artisanal sourdough bread.",
+    "price": 8.00,
+    "category": "food",
+    "image": "img/image9.png"
+  },
+  {
+    "id": "muffin",
+    "name": "Blueberry Muffin",
+    "description": "Sweet, moist, and bursting with fresh berries.",
+    "price": 4.00,
+    "category": "food",
+    "image": "img/image10.png"
+  }
+]

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Java Buzz | Premium Coffee & Fresh Food</title>
+    <meta name="description" content="Order your favorite coffee from Java Buzz. Contact us for inquiries or special orders.">
+    <meta name="keywords" content="order coffee, contact Java Buzz, coffee delivery, inquiry form">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="main-navigation">
+        <div class="container nav-container">
+            <div class="logo" data-testid="logo">
+                <span class="logo-text">JAVA BUZZ</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" data-testid="nav-links">
+                <li><a href="Home.html" data-testid="nav-home">HOME</a></li>
+                <li><a href="Menu.html" data-testid="nav-menu">MENU</a></li>
+                <li><a href="Location.html" data-testid="nav-location">LOCATION</a></li>
+                <li><a href="Blog.html" data-testid="nav-blog">BLOG</a></li>
+                <li><a href="OrderNow.html" class="nav-cta active" data-testid="nav-order">ORDER NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" data-testid="order-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="order-title">ORDER NOW</h1>
+            <p class="page-subtitle" data-testid="order-subtitle">Get in touch for orders and inquiries</p>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-section" data-testid="order-section">
+        <div class="container">
+            <div class="order-grid">
+                <!-- Order Form -->
+                <div class="order-form-container" data-testid="order-form-container">
+                    <h2 class="form-title" data-testid="form-title">Place Your Order</h2>
+                    <form id="orderForm" class="order-form" data-testid="order-form">
+                        <div class="form-group">
+                            <label for="name" data-testid="name-label">Full Name *</label>
+                            <input type="text" id="name" name="name" required data-testid="name-input" placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-testid="email-label">Email *</label>
+                            <input type="email" id="email" name="email" required data-testid="email-input" placeholder="abc@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-testid="phone-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" data-testid="phone-input" placeholder="+92 3123456789">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderType" data-testid="order-type-label">Order Type *</label>
+                            <select id="orderType" name="orderType" required data-testid="order-type-select">
+                                <option value="">Select order type</option>
+                                <option value="pickup">Pickup</option>
+                                <option value="dine-in">Dine In</option>
+                                <option value="catering">Catering</option>
+                                <option value="inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-testid="message-label">Order Details / Message *</label>
+                            <textarea id="message" name="message" rows="6" required data-testid="message-textarea" placeholder="Tell us what you'd like to order or any questions you have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-full" data-testid="submit-order-button">SUBMIT ORDER</button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" data-testid="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Order Received!</h3>
+                        <p>Thank you for your order. We'll get back to you shortly.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="order-info" data-testid="order-info">
+                    <div class="info-card">
+                        <h3 class="info-title" data-testid="quick-contact-title">Quick Contact</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>(555) CODE-123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@javabuzz.dev</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>123 Developer Street<br>San Francisco, CA 94103</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title" data-testid="order-options-title">Order Options</h3>
+                        <ul class="order-options-list">
+                            <li data-testid="option-pickup"><strong>Pickup:</strong> Order online, pick up in store</li>
+                            <li data-testid="option-dine"><strong>Dine In:</strong> Reserve a table for your team</li>
+                            <li data-testid="option-catering"><strong>Catering:</strong> Coffee for your next event</li>
+                            <li data-testid="option-inquiry"><strong>Inquiry:</strong> Questions? We're here to help</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title" data-testid="response-time-title">Response Time</h3>
+                        <p>We typically respond within 1-2 hours during business hours.</p>
+                        <p class="info-highlight">For immediate service, call us at (555) CODE-123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Java Buzz</h3>
+                    <p>Where Code Meets Coffee</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Location.html">Location</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 6 AM - 2 AM</p>
+                    <p>Sat-Sun: 7 AM - 2 AM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@javabuzz.dev</p>
+                    <p>(555) CODE-123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Java Buzz. All rights reserved.<span class="cursor-blink">_</span></p>
+                <a href="sitemap.xml" class="sitemap-link">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Java Buzz | Premium Coffee & Fresh Food</title>
+    <meta name="description" content="Find Java Buzz coffee shop. Get directions, parking information, and contact details. Visit us today for the best coffee experience.">
+    <meta name="keywords" content="Java Buzz location, coffee shop address, directions, parking, visit us">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="main-navigation">
+        <div class="container nav-container">
+            <div class="logo" data-testid="logo">
+                <span class="logo-text">JAVA BUZZ</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" data-testid="nav-links">
+                <li><a href="Home.html" data-testid="nav-home">HOME</a></li>
+                <li><a href="Menu.html" data-testid="nav-menu">MENU</a></li>
+                <li><a href="Location.html" class="active" data-testid="nav-location">LOCATION</a></li>
+                <li><a href="Blog.html" data-testid="nav-blog">BLOG</a></li>
+                <li><a href="OrderNow.html" class="nav-cta" data-testid="nav-order">ORDER NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" data-testid="location-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="location-title">FIND US</h1>
+            <p class="page-subtitle" data-testid="location-subtitle">Come grab a cup with us</p>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" data-testid="location-section">
+        <div class="container">
+            <div class="location-grid">
+                <!-- Map -->
+                <div class="location-map" data-testid="location-map-container">
+                    <div id="map" data-testid="leaflet-map"></div>
+                </div>
+
+                <!-- Location Info -->
+                <div class="location-info" data-testid="location-info">
+                    <div class="info-card">
+                        <h2 class="info-title" data-testid="address-title">Address</h2>
+                        <p class="info-text" data-testid="address-text">123 Developer Street<br>Tech District, San Francisco<br>CA 94103</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="info-title" data-testid="hours-title">Hours</h2>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="hours-day">Monday - Friday</span>
+                                <span class="hours-time">6:00 AM - 2:00 AM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">Saturday - Sunday</span>
+                                <span class="hours-time">7:00 AM - 2:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="info-title" data-testid="contact-title">Contact</h2>
+                        <p class="info-text" data-testid="contact-text">
+                            <strong>Phone:</strong> (555) CODE-123<br>
+                            <strong>Email:</strong> hello@javabuzz.dev
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="info-title" data-testid="parking-title">Parking & Directions</h2>
+                        <ul class="info-list">
+                            <li data-testid="parking-item-1">Street parking available on Developer Street</li>
+                            <li data-testid="parking-item-2">Public parking garage 1 block away (Startup Plaza)</li>
+                            <li data-testid="parking-item-3">Near BART Station (Tech Hub stop)</li>
+                            <li data-testid="parking-item-4">Bike racks available out front</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="info-title" data-testid="amenities-title">Amenities</h2>
+                        <div class="amenities-grid">
+                            <div class="amenity-item" data-testid="amenity-wifi">
+                                <span class="amenity-icon">📶</span>
+                                <span>Gigabit WiFi</span>
+                            </div>
+                            <div class="amenity-item" data-testid="amenity-outlets">
+                                <span class="amenity-icon">🔌</span>
+                                <span>Power Outlets</span>
+                            </div>
+                            <div class="amenity-item" data-testid="amenity-seating">
+                                <span class="amenity-icon">💺</span>
+                                <span>Comfy Seating</span>
+                            </div>
+                            <div class="amenity-item" data-testid="amenity-quiet">
+                                <span class="amenity-icon">🤫</span>
+                                <span>Quiet Zones</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Java Buzz</h3>
+                    <p>Where Code Meets Coffee</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Location.html">Location</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 6 AM - 2 AM</p>
+                    <p>Sat-Sun: 7 AM - 2 AM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@javabuzz.dev</p>
+                    <p>(555) CODE-123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Java Buzz. All rights reserved.<span class="cursor-blink">_</span></p>
+                <a href="sitemap.xml" class="sitemap-link">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
