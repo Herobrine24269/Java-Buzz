@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Java Buzz | Premium Coffee & Fresh Food</title>
-    <meta name="description" content="Order your favorite coffee from Java Buzz. Contact us for inquiries or special orders.">
-    <meta name="keywords" content="order coffee, contact Java Buzz, coffee delivery, inquiry form">
+    <meta name="keywords"
+        content="order Java Buzz coffee, online coffee order, catering for tech events, pickup coffee San Francisco, coffee delivery inquiry">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar" data-testid="main-navigation">
@@ -18,13 +22,14 @@
             <div class="logo" data-testid="logo">
                 <span class="logo-text">JAVA BUZZ</span>
             </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle"
+                aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks" data-testid="nav-links">
-                <li><a href="index.html.html" data-testid="nav-home">HOME</a></li>
+                <li><a href="index.html" data-testid="nav-home">HOME</a></li>
                 <li><a href="Menu.html" data-testid="nav-menu">MENU</a></li>
                 <li><a href="Location.html" data-testid="nav-location">LOCATION</a></li>
                 <li><a href="Blog.html" data-testid="nav-blog">BLOG</a></li>
@@ -48,25 +53,32 @@
                 <!-- Order Form -->
                 <div class="order-form-container" data-testid="order-form-container">
                     <h2 class="form-title" data-testid="form-title">Place Your Order</h2>
-                    <form id="orderForm" class="order-form" data-testid="order-form">
+                    <form id="orderForm" class="order-form">
+
                         <div class="form-group">
-                            <label for="name" data-testid="name-label">Full Name *</label>
-                            <input type="text" id="name" name="name" required data-testid="name-input" placeholder="John Doe">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3"
+                                maxlength="40" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
+                                onpaste="event.preventDefault();" pattern="^[A-Za-z\s]{3,40}$"
+                                title="Only letters allowed (no numbers or symbols)">
                         </div>
 
                         <div class="form-group">
-                            <label for="email" data-testid="email-label">Email *</label>
-                            <input type="email" id="email" name="email" required data-testid="email-input" placeholder="abc@gmail.com">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="phone" data-testid="phone-label">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" data-testid="phone-input" placeholder="+92 3123456789">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 3123456789" inputmode="numeric"
+                                pattern="^(\+92|0)?3[0-9]{9}$" maxlength="13"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+                                title="Enter valid Pakistani number e.g. +923123456789">
                         </div>
 
                         <div class="form-group">
-                            <label for="orderType" data-testid="order-type-label">Order Type *</label>
-                            <select id="orderType" name="orderType" required data-testid="order-type-select">
+                            <label for="orderType">Order Type *</label>
+                            <select id="orderType" name="orderType" required>
                                 <option value="">Select order type</option>
                                 <option value="pickup">Pickup</option>
                                 <option value="dine-in">Dine In</option>
@@ -76,15 +88,19 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="message" data-testid="message-label">Order Details / Message *</label>
-                            <textarea id="message" name="message" rows="6" required data-testid="message-textarea" placeholder="Tell us what you'd like to order or any questions you have..."></textarea>
+                            <label for="message">Order Details / Message *</label>
+                            <textarea id="message" name="message" rows="6" required minlength="10"
+                                placeholder="Tell us what you'd like to order..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn-primary btn-full" data-testid="submit-order-button">SUBMIT ORDER</button>
+                        <button type="submit" class="btn-primary btn-full">
+                            SUBMIT ORDER
+                        </button>
                     </form>
 
                     <!-- Success Message -->
-                    <div id="successMessage" class="success-message" data-testid="success-message" style="display: none;">
+                    <div id="successMessage" class="success-message" data-testid="success-message"
+                        style="display: none;">
                         <div class="success-icon">✓</div>
                         <h3>Order Received!</h3>
                         <p>Thank you for your order. We'll get back to you shortly.</p>
@@ -124,7 +140,8 @@
                             <li data-testid="option-pickup"><strong>Pickup:</strong> Order online, pick up in store</li>
                             <li data-testid="option-dine"><strong>Dine In:</strong> Reserve a table for your team</li>
                             <li data-testid="option-catering"><strong>Catering:</strong> Coffee for your next event</li>
-                            <li data-testid="option-inquiry"><strong>Inquiry:</strong> Questions? We're here to help</li>
+                            <li data-testid="option-inquiry"><strong>Inquiry:</strong> Questions? We're here to help
+                            </li>
                         </ul>
                     </div>
 
@@ -175,4 +192,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

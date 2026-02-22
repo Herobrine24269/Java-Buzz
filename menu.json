@@ -5,7 +5,7 @@
     "description": "Pure, intense, and rich. The perfect quick pick-me-up.",
     "price": 3.50,
     "category": "coffee",
-    "image": "img/image1.png"
+    "image": "img/image1.jpg"
   },
   {
     "id": "latte",
@@ -13,7 +13,7 @@
     "description": "Smooth and creamy. Perfect for relaxing or catching up with friends.",
     "price": 5.00,
     "category": "coffee",
-    "image": "img/image2.png"
+    "image": "img/image2.jpg"
   },
   {
     "id": "cappuccino",
@@ -21,7 +21,7 @@
     "description": "A traditional favorite with a beautiful, thick layer of foam.",
     "price": 5.50,
     "category": "coffee",
-    "image": "img/image3.png"
+    "image": "img/image3.jpg"
   },
   {
     "id": "americano",
@@ -29,7 +29,7 @@
     "description": "Smooth, bold, and robust. A classic drip-style experience.",
     "price": 4.00,
     "category": "coffee",
-    "image": "img/image4.png"
+    "image": "img/image4.jpg"
   },
   {
     "id": "cold-brew",
@@ -37,7 +37,7 @@
     "description": "Slow-steeped perfection. Low acidity, highly refreshing.",
     "price": 5.50,
     "category": "coffee",
-    "image": "img/image5.png"
+    "image": "img/image5.jpg"
   },
   {
     "id": "mocha",
@@ -45,7 +45,7 @@
     "description": "Rich espresso meets sweet cocoa. A comforting treat.",
     "price": 6.00,
     "category": "coffee",
-    "image": "img/image6.png"
+    "image": "img/image6.jpg"
   },
   {
     "id": "croissant",
@@ -53,7 +53,7 @@
     "description": "Flaky, warm, and baked fresh every morning.",
     "price": 4.50,
     "category": "food",
-    "image": "img/image7.png"
+    "image": "img/image7.jpg"
   },
   {
     "id": "bagel",
@@ -61,7 +61,7 @@
     "description": "Toasted to perfection, served with rich cream cheese.",
     "price": 5.00,
     "category": "food",
-    "image": "img/image8.png"
+    "image": "img/image8.jpg"
   },
   {
     "id": "avocado-toast",
@@ -69,7 +69,7 @@
     "description": "Fresh avocado on artisanal sourdough bread.",
     "price": 8.00,
     "category": "food",
-    "image": "img/image9.png"
+    "image": "img/image9.jpeg"
   },
   {
     "id": "muffin",
@@ -77,6 +77,6 @@
     "description": "Sweet, moist, and bursting with fresh berries.",
     "price": 4.00,
     "category": "food",
-    "image": "img/image10.png"
+    "image": "img/image10.jpeg"
   }
 ]

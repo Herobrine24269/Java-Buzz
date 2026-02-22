@@ -155,6 +155,12 @@ a {
 }
 
 .hero-content {
+    background: url(img/bg.jpg);
+    background-size: cover;
+    max-width: 70vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 100px 500px 100px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -250,48 +256,6 @@ a {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.steam {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 40px;
-    height: 60px;
-    background: linear-gradient(to top, rgba(245, 230, 211, 0.3), transparent);
-    border-radius: 50%;
-    filter: blur(10px);
-    animation: steam 3s ease-out infinite;
-    transform-origin: center;
-}
-
-.steam-1 {
-    animation-delay: 0s;
-}
-
-.steam-2 {
-    animation-delay: 1s;
-    left: 45%;
-}
-
-.steam-3 {
-    animation-delay: 2s;
-    left: 55%;
-}
-
-@keyframes steam {
-    0% {
-        transform: translateY(0) scaleX(1);
-        opacity: 0.8;
-    }
-    50% {
-        transform: translateY(-20px) scaleX(1.2);
-        opacity: 0.5;
-    }
-    100% {
-        transform: translateY(-40px) scaleX(1.5);
-        opacity: 0;
-    }
 }
 
 /* =====================
